@@ -1,0 +1,7 @@
+.paragraph{
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+}
+.paragraph p{
+    margin-bottom: 10px;
+}

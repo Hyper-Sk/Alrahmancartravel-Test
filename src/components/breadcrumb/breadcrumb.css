@@ -1,0 +1,60 @@
+.breadcrumb{
+    padding-block: 4px;
+    background-color: gray;
+    height: 50vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+.breadcrumb a{
+    color: white;
+    border-bottom: 2px solid var(--bg-dark);
+}
+.breadcrumb .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 500;
+}
+
+.breadcrumb p{
+    color: white;
+}
+
+.breadcrumb i{
+    color: white;
+}
+
+
+
+/* responsive design  */
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+
+    .breadcrumb{
+        height: 40vh;   
+    }
+}
+ 
+@media (max-width: 768px) {
+    .breadcrumb{
+        height: 30vh;   
+    }
+}
+
+@media (max-width: 576px) {
+
+    .breadcrumb{
+        height: 20vh;   
+    }
+}

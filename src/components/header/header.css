@@ -1,0 +1,188 @@
+.header {
+    background-color:var(--nav-bg);
+    /* position: fixed; */
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header .header__logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header .header__logo img{
+    height: 65px;
+}
+
+.header__logo {}
+
+.header-content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .header__menu {
+    transition: 0.3s ease;
+    display: flex;
+}
+
+.header .header__menu li {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 5px;
+    margin-inline: 1px;
+}
+.header .header__menu li:hover {
+   background-color: var(--bg-dark);
+}
+.header .header__menu li:hover a{
+    color: var(--text-light);
+}
+
+.header .header__menu .active{
+    background-color: var(--bg-dark);
+}
+.header .header__menu .active a{
+    color: var(--text-light);
+}
+
+.header .header__menu li a {
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+}
+
+.header .header__social {
+    background-color: var(--bg-dark);
+}
+
+.header .header__social-center {
+    display: flex;
+    height: 40px;
+    color: var(--text-light);
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header__social-center i{
+    color: var(--text-light);
+    font-size: 20px;
+}
+.header .header__social-center p{
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+/* .header-social-left p{
+    font-size: 18px;
+} */
+
+.header__social-right i{
+    cursor: pointer;
+    font-size: 30px;
+    padding-left: 1.2rem;
+}
+.header__social-right a{
+   
+}
+.togglebar{
+    display: none;
+}
+.toggle_close{
+    display: none;
+    height: 70px;
+}
+.toggle_close i{
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.header .header__social .header__social-icon {}
+
+
+/* responsive design  */
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .header-content {
+        position: relative;
+        overflow: visible;
+        
+    }
+    .header-content {
+        height: 80px;
+    }
+    .header .header__logo img{
+        height: 55px;
+    }
+    
+    .header .header__menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        /* transform: translateX(00%); */
+        width: 70%;
+        height: 100vh;
+        z-index: 999;
+       
+        background-color: var(--nav-bg);
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.1);
+    }
+    .header .header__menu li {
+        padding-inline: 1rem;
+        padding-block: 0.8rem;
+        border-radius: 0px;
+        margin-inline: 0;
+    }
+    .header__menu.active{
+        right: 0px;
+        transform: translateX(0);
+        visibility: visible;
+    }
+    .toggle_close{
+        display: block;
+    }
+    .header .header__menu li {
+        margin-block: 0px;
+    }
+    .togglebar{
+        display: block;
+    }
+    .togglebar i{
+        font-size: 25px;
+    }
+    .header .header__social {
+       
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header .header__social-center i{
+       
+        font-size: 22px;
+    }
+    .header .header__social-center p{
+       
+        font-size: 16px;
+    }
+
+    .header .header__social-center {
+        height: 38px;
+    }
+
+}
+
+@media (max-width: 576px) {}

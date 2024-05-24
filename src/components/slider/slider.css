@@ -1,0 +1,115 @@
+.swiper{
+    background-color: antiquewhite;
+    height: 70vh;
+}
+.swiper .overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    position: absolute;
+}
+.swiper .overlay h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+
+}
+.swiper .overlay h2 span{
+    color: var(--slider-hightlight);
+    font-size: 4rem;
+    /* text-shadow: 3px 0px 0px rgb(217, 217, 217); */
+
+    /* -webkit-text-stroke: 2px var(--text-light); 
+    text-stroke: 2px var(--text-light); */
+    /* font-weight: 600; */
+    /* font-style: italic; */
+}
+
+.swiper .overlay p{
+    color: white;
+    max-width: 600px;
+    
+}
+.swiper .overlay a{
+    color: white;
+    margin-top: 1rem;
+    padding: 10px 30px;
+    background-color: var(--bg-dark);
+    align-self: flex-start;
+}
+.swiper .overlay div{
+   max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.swiper .swiper-slide img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.swiper .swiper-slide-active{
+    /*  */
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+    .swiper{
+        /* height: 80vh; */
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper{
+        height: 50vh;
+    }
+    .swiper .overlay{
+        padding: 2rem;
+        text-align: center;
+    }
+    /* .swiper .overlay div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+    .swiper .overlay a{
+        align-self: center;
+    }
+    .swiper .overlay h2{
+        font-size: 2.5rem;
+    }
+    .swiper .overlay h2 span{
+        font-size: 2.5rem;
+        /* font-style: italic; */
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper{
+        /* height: 60vh; */
+    }
+    .swiper .overlay h2{
+        font-size: 2.2rem;
+    }
+    .swiper .overlay h2 span{
+        font-size: 2.2rem;
+        /* font-style: italic; */
+    }
+}

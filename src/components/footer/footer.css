@@ -1,0 +1,25 @@
+footer .copyright{
+    padding:2rem 1rem;
+    background-color: #191919;
+}
+footer .powered{
+    padding: .5rem 1rem;
+    background-color: #3f3f3f;
+    text-align: start;
+}
+
+footer .powered a{
+  text-decoration: underline;
+}
+
+footer p{
+    color: var(--bg-dark);
+    text-align: center;
+}
+
+footer a{
+    color: var(--text-light);
+    border-bottom: 0px solid var(--text-light);
+    padding: 0px;
+    cursor: pointer;
+}
