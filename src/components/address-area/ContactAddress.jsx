@@ -16,8 +16,8 @@ const ContactAddress = () => {
                 </a>
             </div>
             <div className="contact__mail">
-                <a href="mailto:sohailshaiksk@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="uil uil-envelope-download"></i> <span>example@gmail.com</span> 
+                <a href="mailto:alrahmancartravel@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-envelope-download"></i> <span>alrahmancartravel@gmail.com</span> 
                 </a>
             </div>
             <div className="contact__address">
